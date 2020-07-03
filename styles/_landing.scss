@@ -66,8 +66,6 @@
   font-size: 7rem;
   letter-spacing: 0.5rem;
   font-weight: 900;
-  left: 55%;
-  top: 50%;
   z-index: 20;
 }
 
@@ -88,6 +86,7 @@
   left: 60%;
   top: 20%;
   z-index: 15;
+  filter: drop-shadow(0px 0px 120px #ffffff);
 }
 
 .moonlight {
