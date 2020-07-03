@@ -1,0 +1,24 @@
+$font: "Montserrat", sans-serif;
+@font-face {
+  font-family: "Futura";
+  src: url(/font/FuturaPTHeavy.otf);
+}
+
+@font-face {
+  font-family: "FuturaBold";
+  src: url(/font/FuturaPTHeavy.otf);
+}
+
+@font-face {
+  font-family: "FuturaMedium";
+  src: url(/font/FuturaPTMedium.otf);
+}
+
+@font-face {
+  font-family: "FuturaLight";
+  src: url(/font/FuturaPTLight.otf);
+}
+
+$fontFuturaMedium: "FuturaMedium";
+$fontFuturaBold: "FuturaBold";
+$fontFuturaLight: "FuturaLight";

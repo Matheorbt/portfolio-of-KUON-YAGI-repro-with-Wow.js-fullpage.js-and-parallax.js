@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url(/font/FuturaPTHeavy.otf);
+}
+
+@font-face {
+  font-family: "FuturaBold";
+  src: url(/font/FuturaPTHeavy.otf);
+}
+
+@font-face {
+  font-family: "FuturaMedium";
+  src: url(/font/FuturaPTMedium.otf);
+}
+
+@font-face {
+  font-family: "FuturaLight";
+  src: url(/font/FuturaPTLight.otf);
+}
+
+.landingPage {
+  height: 100vh;
+  width: 100%;
+  background-color: #061d38;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1fr 2fr 10%;
+      grid-template-columns: 10% 1fr 2fr 10%;
+}
+
+#spaceShip {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.heroTitle {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+}
+
+.heroTitle :nth-child(2) {
+  margin-left: 40px;
+}
+
+.heroTitle :nth-child(1)::after {
+  display: block;
+  position: absolute;
+  left: 20%;
+  top: 120%;
+  content: "";
+  width: 110px;
+  height: 5px;
+  background-color: #ff0000;
+  border-radius: 50px;
+}
+
+.heroTitle :nth-child(2)::after {
+  display: block;
+  position: absolute;
+  top: 110%;
+  left: 2%;
+  border-radius: 50px;
+  content: "";
+  width: 150px;
+  height: 5px;
+  background-color: #ff0000;
+}
+
+.descriptionHero {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 130%;
+  font-weight: 300;
+}
+
+.svgHeadline {
+  color: #ff0000;
+  font-family: "FuturaBold";
+  font-size: 7rem;
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  z-index: 20;
+}
+
+#scene {
+  position: absolute;
+  left: 51%;
+  top: 20%;
+}
+
+.stars {
+  position: relative;
+  z-index: 1;
+  top: -100px;
+  left: -500px;
+}
+
+.moonImage {
+  left: 60%;
+  top: 20%;
+  z-index: 15;
+}
+
+.moonlight {
+  position: relative;
+  left: -420px;
+  top: -420px;
+  z-index: 15;
+}
+
+.cloud01 {
+  position: relative;
+  top: 300px;
+  left: -200px;
+  z-index: 20;
+}
+
+.cloud02 {
+  position: relative;
+  top: -10px;
+  left: -200px;
+  z-index: 10;
+}
+
+.cloud03 {
+  position: relative;
+  top: 400px;
+  left: 300px;
+  z-index: 20;
+}
+
+.cloud04 {
+  position: relative;
+  top: 50px;
+  left: 350px;
+  z-index: 20;
+}
+
+.cloud05 {
+  position: relative;
+  top: -100px;
+  left: 250px;
+  z-index: 10;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2% (1fr)[2] 2%;
+      grid-template-columns: 2% repeat(2, 1fr) 2%;
+  -ms-grid-rows: 0;
+      grid-template-rows: 0;
+  z-index: 100;
+}
+
+.firstHamburger,
+.secondHamburger {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 50px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.activeHamburgerButtonFirst {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+.activeHamburgerButtonSecond {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+.navlink a:not(.name) {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.navlink a i {
+  font-size: 4rem;
+  margin-right: 50px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "FuturaLight";
+  letter-spacing: 0.25rem;
+}
+
+.rightNavbar {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.leftNavbar {
+  grid-row: 0;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin-top: 20px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.fullNavbar {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#ff4d5a));
+  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+}
+
+.navlinksFull a {
+  font-family: "FuturaMedium";
+  color: white;
+  font-weight: 900;
+  font-size: 10rem;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  -webkit-text-decoration: line-through transparent;
+          text-decoration: line-through transparent;
+}
+
+.navlinksFull a:hover {
+  -webkit-text-decoration: line-through white;
+          text-decoration: line-through white;
+}
+
+.fullNavbarActive {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  z-index: 50;
+}
+
+.toggle .firstHamburger {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.toggle .secondHamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=styles.css.map */

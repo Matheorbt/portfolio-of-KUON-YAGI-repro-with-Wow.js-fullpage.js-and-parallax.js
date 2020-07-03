@@ -1,0 +1,106 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: 2% repeat(2, 1fr) 2%;
+  grid-template-rows: 0;
+  z-index: 100;
+}
+
+.firstHamburger,
+.secondHamburger {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: all ease-in-out 0.5s;
+}
+
+.activeHamburgerButtonFirst {
+  transform: rotateX(90deg);
+}
+
+.activeHamburgerButtonSecond {
+  transform: rotateX(90deg);
+}
+
+.navlink a:not(.name) {
+  color: white;
+  font-family: $font;
+  font-size: 2rem;
+}
+
+.navlink a i {
+  font-size: 4rem;
+  margin-right: 50px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  font-family: $fontFuturaLight;
+  letter-spacing: 0.25rem;
+}
+
+.rightNavbar {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.leftNavbar {
+  grid-row: 0;
+  grid-column: 2/3;
+  margin-top: 20px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.fullNavbar {
+  transform: translateY(-100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 1s all ease-in-out;
+}
+
+.navlinksFull a {
+  font-family: $fontFuturaMedium;
+  color: white;
+  font-weight: 900;
+  font-size: 10rem;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  text-decoration: line-through transparent;
+}
+
+.navlinksFull a:hover {
+  text-decoration: line-through white;
+}
+
+.fullNavbarActive {
+  transform: translateY(0%);
+  z-index: 50;
+}
+
+.toggle .firstHamburger {
+  transform: rotate(-45deg);
+}
+
+.toggle .secondHamburger {
+  transform: rotate(45deg);
+}
