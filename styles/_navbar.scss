@@ -36,6 +36,11 @@
 .navlink a i {
   font-size: 4rem;
   margin-right: 50px;
+  transition: all ease-in-out 0.2s;
+}
+
+.navlink a i:hover {
+  opacity: 0.7;
 }
 
 .name {
@@ -44,8 +49,12 @@
   color: white;
   font-family: $fontFuturaLight;
   letter-spacing: 0.25rem;
+  transition: all ease-in-out 0.2s;
 }
 
+.name:hover {
+  opacity: 0.7;
+}
 .rightNavbar {
   grid-column: 3/4;
   display: flex;
@@ -66,7 +75,7 @@
 }
 
 .fullNavbar {
-  transform: translateY(-100%);
+  transform: translateY(-150%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -75,7 +84,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  transition: 1s all ease-in-out;
+  transition: 0.75s all ease-in-out;
+  z-index: 50;
 }
 
 .navlinksFull a {
@@ -103,4 +113,8 @@
 
 .toggle .secondHamburger {
   transform: rotate(45deg);
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: red;
 }

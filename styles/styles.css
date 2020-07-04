@@ -31,6 +31,11 @@ html {
   src: url(/font/FuturaPTLight.otf);
 }
 
+@font-face {
+  font-family: "FuturaItalic";
+  src: url(/font/FuturaPTCondBookOblique.otf);
+}
+
 .landingPage {
   height: 100vh;
   width: 100%;
@@ -41,17 +46,8 @@ html {
       grid-template-columns: 10% 1fr 2fr 10%;
 }
 
-#spaceShip {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -o-object-fit: fill;
-     object-fit: fill;
+#fullpage {
+  background-color: #061d38;
 }
 
 .heroTitle {
@@ -76,28 +72,25 @@ html {
   margin-left: 40px;
 }
 
-.heroTitle :nth-child(1)::after {
+.firstRedLine {
   display: block;
-  position: absolute;
-  left: 20%;
-  top: 120%;
-  content: "";
+  position: relative;
   width: 110px;
   height: 5px;
-  background-color: #ff0000;
+  background-color: #ff4d5a;
   border-radius: 50px;
+  top: 150px;
 }
 
-.heroTitle :nth-child(2)::after {
+.secondRedLine {
   display: block;
-  position: absolute;
-  top: 110%;
-  left: 2%;
-  border-radius: 50px;
-  content: "";
-  width: 150px;
+  position: relative;
+  top: 0px;
+  left: 110px;
+  width: 110px;
   height: 5px;
-  background-color: #ff0000;
+  background-color: #ff4d5a;
+  border-radius: 50px;
 }
 
 .descriptionHero {
@@ -108,15 +101,32 @@ html {
 }
 
 .svgHeadline {
-  color: #ff0000;
+  color: #ff4d5a;
   font-family: "FuturaBold";
   font-size: 7rem;
   letter-spacing: 0.5rem;
   font-weight: 900;
-  position: absolute;
-  left: 55%;
-  top: 50%;
   z-index: 20;
+  position: relative;
+  right: 95px;
+  top: 300px;
+}
+
+.scrollDown {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background-color: white;
+  bottom: 4%;
+  left: 2%;
+  color: white;
+  font-family: "FuturaMedium";
+  font-size: 1.5rem;
+}
+
+.scrollDown span {
+  position: relative;
+  left: 10px;
 }
 
 #scene {
@@ -133,9 +143,12 @@ html {
 }
 
 .moonImage {
-  left: 60%;
-  top: 20%;
+  position: relative;
+  left: 0%;
+  top: -100px;
   z-index: 15;
+  -webkit-filter: drop-shadow(0px 0px 120px #ffffff);
+          filter: drop-shadow(0px 0px 120px #ffffff);
 }
 
 .moonlight {
@@ -224,6 +237,12 @@ html {
 .navlink a i {
   font-size: 4rem;
   margin-right: 50px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.navlink a i:hover {
+  opacity: 0.7;
 }
 
 .name {
@@ -232,6 +251,12 @@ html {
   color: white;
   font-family: "FuturaLight";
   letter-spacing: 0.25rem;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.name:hover {
+  opacity: 0.7;
 }
 
 .rightNavbar {
@@ -264,8 +289,8 @@ html {
 }
 
 .fullNavbar {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -283,8 +308,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 1s all ease-in-out;
-  transition: 1s all ease-in-out;
+  -webkit-transition: 0.75s all ease-in-out;
+  transition: 0.75s all ease-in-out;
+  z-index: 50;
 }
 
 .navlinksFull a {
@@ -318,5 +344,130 @@ html {
 .toggle .secondHamburger {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: red;
+}
+
+.about {
+  background: -webkit-gradient(linear, left top, left bottom, from(#061d38), to(#e4692e));
+  background: linear-gradient(#061d38, #e4692e);
+  height: 100vh;
+}
+
+.aboutTitle {
+  position: relative;
+  left: 250px;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
+}
+
+.subLine1 {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 250px;
+  width: 110px;
+  height: 5px;
+  background-color: #ff4d5a;
+  border-radius: 50px;
+}
+
+.subLine2 {
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 200px;
+  width: 110px;
+  height: 5px;
+  background-color: #ff4d5a;
+  border-radius: 50px;
+}
+
+.subtitleAbout {
+  position: relative;
+  font-size: 4rem;
+  left: 250px;
+  top: 50px;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+}
+
+.aboutDescription {
+  color: white;
+  font-family: "FuturaItalic";
+  letter-spacing: 0.1rem;
+  font-size: 4rem;
+  position: relative;
+  top: 120px;
+  left: 300px;
+}
+
+.aboutMark {
+  background-color: transparent;
+  color: #ff4d5a;
+}
+
+.rightSectionAbout {
+  width: 850px;
+  height: 500px;
+  position: relative;
+  left: 1000px;
+  top: -200px;
+}
+
+.googleWrapper {
+  position: relative;
+  height: 500px;
+  width: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #061d38;
+}
+
+#map {
+  background-color: grey;
+  width: 95%;
+  height: 90%;
+}
+
+.works {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e4692e), to(#fff14c));
+  background: linear-gradient(#e4692e, #fff14c);
+}
+
+.contact {
+  height: 100vh;
+  background-color: #061d38;
 }
 /*# sourceMappingURL=styles.css.map */

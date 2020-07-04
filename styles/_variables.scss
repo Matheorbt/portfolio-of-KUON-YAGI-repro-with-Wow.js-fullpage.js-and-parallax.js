@@ -19,6 +19,12 @@ $font: "Montserrat", sans-serif;
   src: url(/font/FuturaPTLight.otf);
 }
 
+@font-face {
+  font-family: "FuturaItalic";
+  src: url(/font/FuturaPTCondBookOblique.otf);
+}
+
 $fontFuturaMedium: "FuturaMedium";
 $fontFuturaBold: "FuturaBold";
 $fontFuturaLight: "FuturaLight";
+$fontFuturaItalic: "FuturaItalic";

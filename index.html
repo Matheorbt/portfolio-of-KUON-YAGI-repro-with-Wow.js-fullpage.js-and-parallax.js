@@ -26,10 +26,7 @@
     <!-- Paralax CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <!-- CDN CSS fullpage -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"
-    />
+    <link rel="stylesheet" href="./styles/fullpage.css" />
     <title>PORTFOLIO SPACE</title>
   </head>
   <body>
@@ -52,38 +49,68 @@
           </li>
         </ul>
       </nav>
-      <div class="fullNavbar">
-        <span class="wow animate__animated animate__fadeInUp navlinksFull"
-          ><a href="#home">HOME</a></span
+      <ul class="fullNavbar" id="myMenu">
+        <li
+          data-menuanchor="home"
+          class="wow animate__animated animate__fadeInUp navlinksFull active homeNavlink"
         >
-        <span class="wow animate__animated animate__fadeInUp navlinksFull"
-          ><a href="#home">WORKS</a></span
+          <a href="#home">HOME</a>
+        </li>
+        <li
+          data-menuanchor="about"
+          class="wow animate__animated animate__fadeInUp navlinksFull aboutNavlink"
         >
-        <span class="wow animate__animated animate__fadeInUp navlinksFull"
-          ><a href="#home">ABOUT ME</a></span
+          <a href="#about">ABOUT</a>
+        </li>
+        <li
+          data-menuanchor="works"
+          class="wow animate__animated animate__fadeInUp navlinksFull worksNavlink"
         >
-        <span class="wow animate__animated animate__fadeInUp navlinksFull"
-          ><a href="#home">CONTACT</a></span
+          <a href="#works">WORKS</a>
+        </li>
+        <li
+          data-menuanchor="contact"
+          class="wow animate__animated animate__fadeInUp navlinksFull contactNavlink"
         >
-      </div>
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
     </header>
     <div id="fullpage">
-      <div class="section landingPage">
+      <div class="section landingPage" id="home">
         <div class="heroTitle">
           <span class="wow animate__animated animate__fadeInLeft matheo"
             >MATHEO</span
           >
+          <div
+            class="wow animate__animated animate__fadeInLeft firstRedLine"
+          ></div>
           <span class="wow animate__animated animate__fadeInLeft robert"
             >ROBERT</span
           >
+          <div
+            class="wow animate__animated animate__fadeInLeft secondRedLine"
+          ></div>
           <span
             class="wow animate__animated animate__fadeInLeft descriptionHero"
           >
-            web designer / markup engineer.
+            passioné par le web/frontend
           </span>
         </div>
-        <div id="scene">
-          <div data-depth="0.4">
+        <div class="scrollDown">
+          <span>S</span>
+          <span>c</span>
+          <span>r</span>
+          <span>o</span>
+          <span>l</span>
+          <span>l</span>
+          <span>D</span>
+          <span>o</span>
+          <span>w</span>
+          <span>n</span>
+        </div>
+        <div class="wow animate__animated animate__fadeInRight" id="scene">
+          <div class="layer" data-depth="0.4">
             <div class="moonlight">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +154,7 @@
               </svg>
             </div>
           </div>
-          <div data-depth="0.1">
+          <div class="layer" data-depth="0.1">
             <div class="stars">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +183,7 @@
               </svg>
             </div>
           </div>
-          <div data-depth="0.4">
+          <div class="layer" data-depth="0.4">
             <div class="moonImage">
               <div class="svgHeadline">
                 PORTFOLIO
@@ -194,7 +221,7 @@
               </svg>
             </div>
           </div>
-          <div data-depth="0.6">
+          <div class="layer" data-depth="0.6">
             <div class="cloud01">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +256,7 @@
               </svg>
             </div>
           </div>
-          <div data-depth="0.2">
+          <div class="layer" data-depth="0.2">
             <div class="cloud02">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -261,7 +288,7 @@
               </svg>
             </div>
           </div>
-          <div data-depth="0.6">
+          <div class="layer" data-depth="0.6">
             <div class="cloud03">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +320,7 @@
               </svg>
             </div>
           </div>
-          <div data-depth="0.6">
+          <div class="layer" data-depth="0.6">
             <div class="cloud04">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -325,7 +352,7 @@
               </svg>
             </div>
           </div>
-          <div data-depth="0.2">
+          <div class="layer" data-depth="0.2">
             <div class="cloud05">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -359,10 +386,33 @@
           </div>
         </div>
       </div>
-      <div class="section about"></div>
+      <div class="section about" id="about">
+        <div class="leftSectionAbout">
+          <div class="aboutTitle">About me</div>
+          <div class="subLine1"></div>
+          <div class="subLine2"></div>
+          <div class="subtitleAbout">ce que j'aime / fais</div>
+        </div>
+        <div class="aboutDescription">
+          <div class="layer">
+            <mark class="aboutMark">"</mark>Étudiant à l'école d'ingénieur
+            Epitech en master </br> je suis passioné par la programmation </br>et plus
+            particulièrement par le développement web.<mark class="aboutMark"
+              >"</mark
+            >
+          </div>
+          </div>
+          <div class="rightSectionAbout">
+            <div class="googleWrapper">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section works" id="works"></div>
+      <div class="section contact" id="contact"></div>
     </div>
     <!-- Fullpage js CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+    <script src="./js/fullpage.js"></script>
     <!-- Script Init Wow.js -->
     <script src="js/wow.min.js"></script>
     <script>
@@ -371,9 +421,16 @@
     <!-- Script init Fullpage.js -->
     <script>
       new fullpage("#fullpage", {
-        //options here
+        anchors: [
+          "homeSection",
+          "aboutSection",
+          "worksSection",
+          "contactSection",
+        ],
+        menu: "#myMenu",
         autoScrolling: true,
-        scrollHorizontally: true,
+        navigation: true,
+        navigationPosition: "left",
       });
     </script>
     <!-- Parallax script init -->
@@ -381,8 +438,15 @@
       var scene = document.getElementById("scene");
       var parallaxInstance = new Parallax(scene, {
         relativeInput: true,
+        selector: ".layer",
       });
     </script>
+     <!-- script map google -->
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGKJoVckZiHKxiv6vUkKntU5CI3DUdWnQ&callback=initMap"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>
