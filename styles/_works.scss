@@ -2,3 +2,58 @@
   height: 100vh;
   background: linear-gradient(#e4692e, #fff14c);
 }
+
+.worksTitle {
+  position: absolute;
+  left: 12%;
+  top: 36%;
+  color: #061d38;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $fontFuturaMedium;
+  font-size: 10rem;
+  z-index: 10;
+}
+
+.worksRedLine1 {
+  display: block;
+  position: relative;
+  top: -5px;
+  left: 15px;
+  width: 110px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.worksRedLine2 {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 45px;
+  width: 110px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.worksRightSection {
+  height: 500px;
+  width: 850px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.subtitleWorks {
+  position: relative;
+  font-size: 4rem;
+  left: 0px;
+  top: 40px;
+  color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $fontFuturaMedium;
+}

@@ -109,7 +109,8 @@
           <span>w</span>
           <span>n</span>
         </div>
-        <div class="wow animate__animated animate__fadeInRight" id="scene">
+        <div id="scene-a">
+          <div class="wow animate__animated animate__fadeInRight">
           <div class="layer" data-depth="0.4">
             <div class="moonlight">
               <svg
@@ -386,21 +387,25 @@
           </div>
         </div>
       </div>
+      </div>
+    
       <div class="section about" id="about">
         <div class="leftSectionAbout">
-          <div class="aboutTitle">About me</div>
-          <div class="subLine1"></div>
-          <div class="subLine2"></div>
-          <div class="subtitleAbout">ce que j'aime / fais</div>
+          <div class="aboutTitle">About me<div class="subLine1"></div>
+          <div class="subLine2"></div></div>
+          
+          <div class="subtitleAbout">ce que j'aime / </br> fais</div>
         </div>
         <div class="aboutDescription">
-          <div class="layer">
-            <mark class="aboutMark">"</mark>Étudiant à l'école d'ingénieur
-            Epitech en master </br> je suis passioné par la programmation </br>et plus
+          <div id="scene-b">
+          <div class="layer" data-depth="0.2">
+            <mark class="aboutMark">"</mark>Étudiant à l'école d'ingénieurs
+            Epitech en master </br> je suis passionné par la programmation </br>et plus
             particulièrement par le développement web.<mark class="aboutMark"
               >"</mark
             >
           </div>
+        </div>
           </div>
           <div class="rightSectionAbout">
             <div class="googleWrapper">
@@ -408,7 +413,28 @@
           </div>
         </div>
       </div>
-      <div class="section works" id="works"></div>
+      <div class="section works" id="works">
+        <div class="worksLeftSection">
+        <div class="worksTitle">
+          Works
+          <div class="worksRedLine1"></div>
+        <div class="worksRedLine2"></div>
+        <div class="subtitleWorks">
+          mon portfolio / 
+        </br>
+          mes sites
+        </div>
+        </div>
+        
+      </div>
+      <div class="worksRightSection">
+        <div class="slide"><img src="./img/worksImage.jpg" width="100%" height="100%"></div>
+        <div class="slide"><img src="./img/worksImage.jpg" width="100%" height="100%"></div>
+        <div class="slide"><img src="./img/worksImage.jpg" width="100%" height="100%"></div>
+        <div class="slide"><img src="./img/worksImage.jpg" width="100%" height="100%"></div>
+      </div>
+        <div id="scene-c"></div>
+      </div>
       <div class="section contact" id="contact"></div>
     </div>
     <!-- Fullpage js CDN -->
@@ -427,6 +453,8 @@
           "worksSection",
           "contactSection",
         ],
+
+        easingcss3:"cubic-bezier(0.645, 0.045, 0.355, 1)",
         menu: "#myMenu",
         autoScrolling: true,
         navigation: true,
@@ -435,11 +463,32 @@
     </script>
     <!-- Parallax script init -->
     <script>
-      var scene = document.getElementById("scene");
-      var parallaxInstance = new Parallax(scene, {
+      
+      var scene = [
+        document.getElementById("scene-a"),
+        document.getElementById("scene-b"),
+        document.getElementById("scene-c"),
+        document.getElementById("scene-d"),
+      ] 
+
+      var parallaxInstance =[ new Parallax(scene[0], {
         relativeInput: true,
         selector: ".layer",
-      });
+      }),
+      new Parallax(scene[1], {
+        relativeInput: true,
+        selector: ".layer",
+      }),
+      new Parallax(scene[2], {
+        relativeInput: true,
+        selector: ".layer",
+      }),
+      new Parallax(scene[3], {
+        relativeInput: true,
+        selector: ".layer",
+      }),
+    
+    ]
     </script>
      <!-- script map google -->
     <script

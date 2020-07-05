@@ -94,9 +94,9 @@ html {
 }
 
 .descriptionHero {
-  position: absolute;
+  position: relative;
   font-size: 2.5rem;
-  top: 130%;
+  top: 30px;
   font-weight: 300;
 }
 
@@ -129,7 +129,7 @@ html {
   left: 10px;
 }
 
-#scene {
+#scene-a {
   position: absolute;
   left: 51%;
   top: 20%;
@@ -358,8 +358,9 @@ html {
 }
 
 .aboutTitle {
-  position: relative;
-  left: 250px;
+  position: absolute;
+  left: 12%;
+  top: 36%;
   color: white;
   -ms-flex-item-align: center;
       align-self: center;
@@ -378,8 +379,8 @@ html {
 .subLine1 {
   display: block;
   position: relative;
-  top: 50px;
-  left: 250px;
+  top: -10px;
+  left: 20px;
   width: 110px;
   height: 5px;
   background-color: #ff4d5a;
@@ -389,8 +390,8 @@ html {
 .subLine2 {
   display: block;
   position: relative;
-  top: 20px;
-  left: 200px;
+  top: 0px;
+  left: 50px;
   width: 110px;
   height: 5px;
   background-color: #ff4d5a;
@@ -401,7 +402,7 @@ html {
   position: relative;
   font-size: 4rem;
   left: 250px;
-  top: 50px;
+  top: 70px;
   color: white;
   -ms-flex-item-align: center;
       align-self: center;
@@ -420,9 +421,9 @@ html {
   font-family: "FuturaItalic";
   letter-spacing: 0.1rem;
   font-size: 4rem;
-  position: relative;
-  top: 120px;
-  left: 300px;
+  position: absolute;
+  top: 65%;
+  left: 12%;
 }
 
 .aboutMark {
@@ -431,17 +432,17 @@ html {
 }
 
 .rightSectionAbout {
-  width: 850px;
-  height: 500px;
-  position: relative;
-  left: 1000px;
-  top: -200px;
+  width: 40vw;
+  height: 50vh;
+  position: absolute;
+  left: 50%;
+  top: 20%;
 }
 
 .googleWrapper {
   position: relative;
-  height: 500px;
-  width: 850px;
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,19 +452,86 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #061d38;
+  background-color: #ffffff;
 }
 
 #map {
   background-color: grey;
-  width: 95%;
-  height: 90%;
+  width: 98%;
+  height: 98%;
 }
 
 .works {
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#e4692e), to(#fff14c));
   background: linear-gradient(#e4692e, #fff14c);
+}
+
+.worksTitle {
+  position: absolute;
+  left: 12%;
+  top: 36%;
+  color: #061d38;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
+}
+
+.worksRedLine1 {
+  display: block;
+  position: relative;
+  top: -5px;
+  left: 15px;
+  width: 110px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.worksRedLine2 {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 45px;
+  width: 110px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.worksRightSection {
+  height: 500px;
+  width: 850px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.subtitleWorks {
+  position: relative;
+  font-size: 4rem;
+  left: 0px;
+  top: 40px;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
 }
 
 .contact {

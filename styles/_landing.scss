@@ -48,9 +48,9 @@
 }
 
 .descriptionHero {
-  position: absolute;
+  position: relative;
   font-size: 2.5rem;
-  top: 130%;
+  top: 30px;
   font-weight: 300;
 }
 
@@ -83,7 +83,7 @@
   left: 10px;
 }
 
-#scene {
+#scene-a {
   position: absolute;
   left: 51%;
   top: 20%;
