@@ -37,15 +37,14 @@ navSlide();
 //Initialisation de la fonction de l'API Javascript
 
 //API mise en commentaire pour éviter l'excès de requete API avant la version build
-
-// function initMap() {
-//   var epitech = { lat: 45.74671126902152, lng: 4.834958581829663 };
-//   var map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 15,
-//     center: epitech,
-//   });
-//   var marker = new google.maps.Marker({
-//     position: epitech,
-//     map: map,
-//   });
-// }
+function initMap() {
+  var epitech = { lat: 45.74671126902152, lng: 4.834958581829663 };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: epitech,
+  });
+  var marker = new google.maps.Marker({
+    position: epitech,
+    map: map,
+  });
+}
