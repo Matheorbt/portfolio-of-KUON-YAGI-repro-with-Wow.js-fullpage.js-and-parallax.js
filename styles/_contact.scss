@@ -47,6 +47,8 @@
 .subtitleContact a {
   text-decoration: none;
   color: white;
+  text-decoration: underline transparent;
+  transition: all 0.2s ease-in-out;
 }
 
 .subtitleContact a:hover {

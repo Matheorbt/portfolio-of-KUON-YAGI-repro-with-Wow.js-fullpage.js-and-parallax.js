@@ -112,3 +112,36 @@
   top: 600px;
   left: -50px;
 }
+
+.projectSlide {
+  color: #061d38;
+  font-family: $fontFuturaMedium;
+  font-size: 10rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectSlide a {
+  color: #061d38;
+  border: 4px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectSlide a:hover {
+  border: 4px solid #061d38;
+}
+
+.projectSlide img {
+  height: 100%;
+  width: 100%;
+}
+
+.projectSlide p {
+  font-size: 5rem;
+  color: white;
+  background-color: #061d38;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 20px;
+  margin-top: 10px;
+}

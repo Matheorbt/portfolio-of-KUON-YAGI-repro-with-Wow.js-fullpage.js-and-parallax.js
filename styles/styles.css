@@ -585,6 +585,41 @@ html {
   left: -50px;
 }
 
+.projectSlide {
+  color: #061d38;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectSlide a {
+  color: #061d38;
+  border: 4px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectSlide a:hover {
+  border: 4px solid #061d38;
+}
+
+.projectSlide img {
+  height: 100%;
+  width: 100%;
+}
+
+.projectSlide p {
+  font-size: 5rem;
+  color: white;
+  background-color: #061d38;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
 .contact {
   height: 100vh;
   background-color: #061d38;
@@ -640,6 +675,10 @@ html {
 .subtitleContact a {
   text-decoration: none;
   color: white;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .subtitleContact a:hover {
