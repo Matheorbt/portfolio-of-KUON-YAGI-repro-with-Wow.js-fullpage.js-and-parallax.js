@@ -60,51 +60,55 @@
 
 #scene-c {
   position: absolute;
+  left: 50%;
+  top: 8%;
 }
 
 .sunlight {
   position: relative;
+  top: 20px;
+  left: -500px;
   z-index: 14;
 }
 
 .sun {
   position: relative;
-  left: 50px;
+  left: -450px;
   top: 75px;
   z-index: 15;
 }
 
 .cloudDay01 {
   position: relative;
-  top: 550px;
-  left: 450px;
+  top: 20px;
+  left: -450px;
   z-index: 20;
 }
 
 .cloudDay02 {
   position: relative;
-  top: 600px;
-  left: -100px;
+  top: 550px;
+  left: -550px;
   z-index: 20;
 }
 
 .cloudDay03 {
   position: relative;
-  top: 50px;
-  left: 350px;
+  top: 250px;
+  left: -50px;
   z-index: 20;
 }
 
 .cloudDayBack01 {
   z-index: 10;
   position: relative;
-  top: 400px;
-  left: 450px;
+  top: 250px;
+  left: -600px;
 }
 
 .cloudDayBack02 {
   z-index: 10;
   position: relative;
-  top: 250px;
-  left: -200px;
+  top: 600px;
+  left: -50px;
 }

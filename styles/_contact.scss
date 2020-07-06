@@ -58,56 +58,64 @@
   filter: drop-shadow(0px 0px 20px white);
 }
 
-.stars {
+#scene-d {
   position: absolute;
-  left: 35%;
-  top: -500px;
+  left: 45%;
+  top: 18%;
+}
+
+.starsContact {
+  position: relative;
+  left: -400px;
+  top: -200px;
 }
 
 .crescentMoon {
   position: relative;
-  left: 300%;
-  top: -300px;
+  left: 350px;
+  top: 100px;
   z-index: 15;
+  filter: drop-shadow(0px 0px 120px #ffffff);
 }
 
 .moonLightContact {
   position: relative;
-  top: -700px;
-  left: 50%;
+  top: -300px;
+  left: -150px;
   z-index: 14;
 }
 
 .cloudNight01 {
   position: relative;
-  left: 1450px;
+  left: 550px;
+  top: 450px;
   z-index: 20;
-  top: -200px;
 }
 
 .cloudNightBack02 {
   position: relative;
-  left: 1050px;
-  top: 150px;
+  left: 150px;
+  top: 375px;
   z-index: 10;
 }
 
 .cloudNight03 {
   position: relative;
-  left: 900px;
-  top: -350px;
+  left: 300px;
+  top: -50px;
   z-index: 20;
 }
 
 .cloudNight04 {
   position: relative;
-  left: 950px;
+  left: -50px;
+  top: 100px;
   z-index: 20;
 }
 
 .cloudNightBack05 {
   position: relative;
-  left: 1350px;
-  top: -400px;
+  left: 550px;
+  top: 150px;
   z-index: 10;
 }
