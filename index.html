@@ -27,6 +27,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <!-- CDN CSS fullpage -->
     <link rel="stylesheet" href="./styles/fullpage.css" />
+    <!-- Barba.js DCN -->
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
    <link rel="icon" type="image/png" href="img/iconMoon.png" />
    <meta name="description" content="Présentation/CV en ligne je suis passionné de développement web front end">
    <meta name=”robots” content="index, follow">
@@ -710,6 +712,11 @@
     <script>
       new WOW().init();
     </script>
+    <!-- Script init Barba.js -->
+    <script>
+  barba.init({
+  })
+</script>
     <!-- Script init Fullpage.js -->
     <script>
       new fullpage("#fullpage", {
@@ -725,6 +732,7 @@
         autoScrolling: true,
         navigation: true,
         navigationPosition: "left",
+
       });
     </script>
     <!-- Parallax script init -->

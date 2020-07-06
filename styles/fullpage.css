@@ -239,3 +239,12 @@ html.fp-enabled,
   white-space: nowrap;
   border: 0;
 }
+
+@media only screen and (max-width: 650px) {
+  #fp-nav.fp-left {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+  }
+}
