@@ -245,6 +245,5 @@ html.fp-enabled,
     position: absolute;
     top: 95%;
     left: 50%;
-    transform: translate3d(-50%, 0, 0);
   }
 }

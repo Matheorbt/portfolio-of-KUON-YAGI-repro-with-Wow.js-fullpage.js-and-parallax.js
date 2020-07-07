@@ -72,6 +72,7 @@
   left: 50%;
   top: 20%;
 }
+
 .googleWrapper {
   position: relative;
   height: 100%;
@@ -86,4 +87,32 @@
   background-color: grey;
   width: 98%;
   height: 98%;
+}
+
+@media screen and (max-width: 1500px) {
+  .rightSectionAbout {
+    width: 90vw;
+    height: 30vh;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+  }
+
+  .aboutTitle {
+    position: absolute;
+    top: 50%;
+    font-size: 6rem;
+  }
+  .aboutDescription {
+    font-size: 2.5rem;
+    position: absolute;
+    left: 5%;
+    top: 75%;
+  }
+  .subtitleAbout {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 62%;
+    left: 5%;
+  }
 }
