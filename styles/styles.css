@@ -2,14 +2,13 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
 
 html {
   font-size: 62.5%;
-  background-color: black;
 }
 
 @font-face {
@@ -53,14 +52,14 @@ html {
   top: 40%;
   color: white;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "FuturaMedium";
   font-size: 10rem;
 }
@@ -145,7 +144,7 @@ html {
   top: -100px;
   z-index: 15;
   -webkit-filter: drop-shadow(0px 0px 120px #ffffff);
-  filter: drop-shadow(0px 0px 120px #ffffff);
+          filter: drop-shadow(0px 0px 120px #ffffff);
 }
 
 .moonlight {
@@ -196,10 +195,10 @@ html {
   top: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2% (1fr) [2] 2%;
-  grid-template-columns: 2% repeat(2, 1fr) 2%;
+  -ms-grid-columns: 2% (1fr)[2] 2%;
+      grid-template-columns: 2% repeat(2, 1fr) 2%;
   -ms-grid-rows: 0;
-  grid-template-rows: 0;
+      grid-template-rows: 0;
   z-index: 100;
 }
 
@@ -217,12 +216,12 @@ html {
 
 .activeHamburgerButtonFirst {
   -webkit-transform: rotateX(90deg);
-  transform: rotateX(90deg);
+          transform: rotateX(90deg);
 }
 
 .activeHamburgerButtonSecond {
   -webkit-transform: rotateX(90deg);
-  transform: rotateX(90deg);
+          transform: rotateX(90deg);
 }
 
 .navlink a:not(.name) {
@@ -264,11 +263,11 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
   margin-top: 20px;
 }
@@ -287,31 +286,24 @@ html {
 
 .fullNavbar {
   -webkit-transform: translateY(-150%);
-  transform: translateY(-150%);
+          transform: translateY(-150%);
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#072142),
-    color-stop(42%, #8c2b7a),
-    to(#ff4d5a)
-  );
+  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#ff4d5a));
   background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: 0.75s all ease-in-out;
   transition: 0.75s all ease-in-out;
   z-index: 50;
@@ -326,28 +318,28 @@ html {
   transition: all ease-in-out 0.2s;
   cursor: pointer;
   -webkit-text-decoration: line-through transparent;
-  text-decoration: line-through transparent;
+          text-decoration: line-through transparent;
 }
 
 .navlinksFull a:hover {
   -webkit-text-decoration: line-through white;
-  text-decoration: line-through white;
+          text-decoration: line-through white;
 }
 
 .fullNavbarActive {
   -webkit-transform: translateY(0%);
-  transform: translateY(0%);
+          transform: translateY(0%);
   z-index: 50;
 }
 
 .toggle .firstHamburger {
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .toggle .secondHamburger {
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 #fp-nav ul li a span,
@@ -366,13 +358,7 @@ html {
 }
 
 .about {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#061d38),
-    to(#e4692e)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#061d38), to(#e4692e));
   background: linear-gradient(#061d38, #e4692e);
   height: 100vh;
 }
@@ -383,14 +369,14 @@ html {
   top: 36%;
   color: white;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "FuturaMedium";
   font-size: 10rem;
   z-index: 10;
@@ -425,14 +411,14 @@ html {
   top: 70px;
   color: white;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "FuturaMedium";
 }
 
@@ -467,11 +453,11 @@ html {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffffff;
 }
 
@@ -483,13 +469,7 @@ html {
 
 .works {
   height: 100vh;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#e4692e),
-    to(#fff14c)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(#e4692e), to(#fff14c));
   background: linear-gradient(#e4692e, #fff14c);
 }
 
@@ -499,14 +479,14 @@ html {
   top: 36%;
   color: #061d38;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "FuturaMedium";
   font-size: 10rem;
   z-index: 10;
@@ -549,14 +529,14 @@ html {
   top: 40px;
   color: white;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "FuturaMedium";
 }
 
@@ -661,14 +641,14 @@ html {
   top: 36%;
   color: white;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "FuturaMedium";
   font-size: 10rem;
   z-index: 10;
@@ -706,20 +686,20 @@ html {
   text-decoration: none;
   color: white;
   -webkit-text-decoration: underline transparent;
-  text-decoration: underline transparent;
+          text-decoration: underline transparent;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .subtitleContact a:hover {
   -webkit-text-decoration: underline white;
-  text-decoration: underline white;
+          text-decoration: underline white;
 }
 
 .githubContact:hover,
 .cvContact:hover {
   -webkit-filter: drop-shadow(0px 0px 20px white);
-  filter: drop-shadow(0px 0px 20px white);
+          filter: drop-shadow(0px 0px 20px white);
 }
 
 #scene-d {
@@ -740,7 +720,7 @@ html {
   top: 100px;
   z-index: 15;
   -webkit-filter: drop-shadow(0px 0px 120px #ffffff);
-  filter: drop-shadow(0px 0px 120px #ffffff);
+          filter: drop-shadow(0px 0px 120px #ffffff);
 }
 
 .moonLightContact {

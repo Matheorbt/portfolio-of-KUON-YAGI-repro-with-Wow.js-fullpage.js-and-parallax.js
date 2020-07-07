@@ -23,18 +23,25 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <!-- Polyfill for barba.js CDN -->
+    <script
+  crossorigin="anonymous"
+  src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"
+></script>
     <!-- Paralax CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <!-- CDN CSS fullpage -->
     <link rel="stylesheet" href="./styles/fullpage.css" />
+    <!-- GSAP CDN -->
+     <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
     <!-- Barba.js DCN -->
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
    <link rel="icon" type="image/png" href="img/iconMoon.png" />
-   <meta name="description" content="Présentation/CV en ligne je suis passionné de développement web front end">
+   <meta name="description" content="Présentation/CV matheo robert freelance presentation cv passionné développement web front end ">
    <meta name=”robots” content="index, follow">
     <title>Mathéo Robert - Ma présentation !</title>
   </head>
-  <body>
+  <body data-barba="wrapper">
     <header>
       <nav class="navbar">
         <ul class="leftNavbar">
@@ -83,6 +90,7 @@
     </header>
     <div id="fullpage">
       <div class="section landingPage" id="home">
+        <div data-barba="container" data-barba-namespace="home">
         <div class="leftSectionHome">
         <div class="heroTitle">
           <span class="wow animate__animated animate__fadeInLeft matheo"
@@ -114,8 +122,8 @@
           <span>o</span>
           <span>w</span>
           <span>n</span>
-        </div>
-      </div>
+        </div></div>
+      
         <div class="rightSectionHome">
         <div id="scene-a">
           <div class="wow animate__animated animate__fadeInRight">
@@ -397,7 +405,9 @@
       </div>
     </div>
       </div>
+    </div>
       <div class="section about" id="about">
+        <div data-barba="container" data-barba-namespace="about">
         <div class="leftSectionAbout">
           <div class="aboutTitle">About me<div class="subLine1"></div>
           <div class="subLine2"></div></div>
@@ -421,7 +431,9 @@
           </div>
         </div>
       </div>
+      </div>
       <div class="section works" id="works">
+        <div data-barba="container" data-barba-namespace="works">
         <div class="worksLeftSection">
         <div class="worksTitle">
           Works
@@ -571,8 +583,10 @@
       <div class="slide projectSlide"><a href="#worksSection" target="_blank">PROJECT 04</a><p>Short description</p></div>
     </div>
       </div>
+    </div>
       </div>
       <div class="section contact" id="contact">
+        <div data-barba="container" data-barba-namespace="contact">
         <div class="leftSectionContact">
           <div class="contactTitle">
             Contact me
@@ -705,6 +719,8 @@
         </div>
       </div>
     </div>
+    </div>
+    </div>
     <!-- Fullpage js CDN -->
     <script src="./js/fullpage.js"></script>
     <!-- Script Init Wow.js -->
@@ -713,10 +729,23 @@
       new WOW().init();
     </script>
     <!-- Script init Barba.js -->
-    <script>
-  barba.init({
-  })
-</script>
+  <script type="text/javascript">
+      barba.init({
+        transitions: [{
+          name: 'opacity-transition',
+          leave(data) {
+            return gsap.to(data.current.container, {
+              opacity: 0
+            });
+          },
+          enter(data) {
+            return gsap.from(data.next.container, {
+              opacity: 0
+            });
+          }
+        }]
+      });
+    </script>
     <!-- Script init Fullpage.js -->
     <script>
       new fullpage("#fullpage", {
