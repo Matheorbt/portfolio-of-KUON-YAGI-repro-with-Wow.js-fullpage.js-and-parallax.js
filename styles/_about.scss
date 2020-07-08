@@ -39,10 +39,10 @@
 }
 
 .subtitleAbout {
-  position: relative;
+  position: absolute;
   font-size: 4rem;
   left: 250px;
-  top: 70px;
+  top: 57%;
   color: white;
   align-self: center;
   display: flex;
@@ -56,7 +56,7 @@
   letter-spacing: 0.1rem;
   font-size: 4rem;
   position: absolute;
-  top: 65%;
+  top: 72%;
   left: 12%;
 }
 
@@ -89,7 +89,116 @@
   height: 98%;
 }
 
+.knowMoreAbout {
+  color: white;
+  font-family: $fontFuturaMedium;
+  font-size: 4rem;
+  position: absolute;
+  left: 65%;
+  top: 80%;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+}
+
+.knowMoreAbout:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.arrowAbout {
+  position: relative;
+  top: 5px;
+}
+
+.arrowAbout path {
+  fill: white;
+}
+
+.hiddenKnowMoreSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  background-color: #061d38;
+  transform: translateX(150%);
+  transition: 0.75s all ease-in-out;
+}
+
+.activeHiddenAbout {
+  transform: translateX(0%);
+  z-index: 50;
+}
+
+.hiddenKnowMoreSectionArrowBack path {
+  fill: white;
+}
+
+.photoProfile {
+  position: relative;
+  width: 100%;
+  background-color: red;
+  width: 25vw;
+  height: 40vh;
+  margin: 5%;
+  margin-left: 10%;
+}
+
+.aboutKnowMoreDescription {
+  color: white;
+  font-family: $fontFuturaMedium;
+  font-size: 2.5rem;
+  width: 80%;
+  margin: 5%;
+}
+
+.containerKnowMoreTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hiddenKnowMoreSectionArrowBack {
+  position: absolute;
+  top: 9%;
+  left: 3%;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 2px transparent;
+  padding: 0;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.hiddenKnowMoreSectionArrowBack svg {
+  padding: 2px;
+}
+
+.hiddenKnowMoreSectionArrowBack:hover {
+  border: solid 2px white;
+}
+
 @media screen and (max-width: 1500px) {
+  .knowMoreAbout {
+    position: absolute;
+    top: 75%;
+    left: 60%;
+  }
+  .containerKnowMoreTop {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+  .photoProfile {
+    width: 50vw;
+    height: 22vh;
+    margin-top: 70px;
+  }
+  .aboutKnowMoreDescription {
+    margin: 5px;
+  }
   .rightSectionAbout {
     width: 90vw;
     height: 30vh;
@@ -114,5 +223,8 @@
     position: absolute;
     top: 62%;
     left: 5%;
+  }
+  .knowMoreAbout {
+    top: 170px;
   }
 }

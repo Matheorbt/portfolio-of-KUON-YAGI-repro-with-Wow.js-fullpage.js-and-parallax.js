@@ -32,6 +32,25 @@ const navSlide = () => {
   });
 };
 
+const knowMore = () => {
+  var buttonKnowMore = document.querySelector(".knowMoreAbout");
+  var fullKnowMore = document.querySelector(".hiddenKnowMoreSection");
+  console.log(buttonKnowMore);
+  console.log(fullKnowMore);
+  var backAarrowMore = document.querySelector(
+    ".hiddenKnowMoreSectionArrowBack"
+  );
+
+  buttonKnowMore.addEventListener("click", () => {
+    fullKnowMore.classList.toggle("activeHiddenAbout");
+  });
+
+  backAarrowMore.addEventListener("click", () => {
+    fullKnowMore.classList.toggle("activeHiddenAbout");
+  });
+};
+
+knowMore();
 navSlide();
 
 //Initialisation de la fonction de l'API Javascript
