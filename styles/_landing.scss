@@ -18,6 +18,7 @@
   flex-direction: column;
   font-family: $fontFuturaMedium;
   font-size: 10rem;
+  z-index: 25;
 }
 
 .heroTitle :nth-child(2) {
@@ -152,4 +153,27 @@
   top: -100px;
   left: 250px;
   z-index: 10;
+}
+
+@media only screen and (max-width: 900px) {
+  .heroTitle {
+    font-size: 8rem;
+    z-index: 25;
+  }
+  .descriptionHero {
+    top: 40px;
+    z-index: 25;
+  }
+  .svgHeadline {
+    font-size: 5rem;
+    position: absolute;
+    left: -25%;
+    top: 30%;
+  }
+  .moonImage svg {
+    visibility: hidden;
+  }
+  .scrollDown {
+    z-index: 25;
+  }
 }

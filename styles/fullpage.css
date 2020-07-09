@@ -105,6 +105,7 @@ html.fp-enabled,
   margin-top: -32px;
   top: 50%;
   opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 #fp-nav.fp-right {
   right: 17px;
@@ -241,9 +242,6 @@ html.fp-enabled,
 
 @media only screen and (max-width: 650px) {
   #fp-nav.fp-left {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
+    left: -20px;
   }
 }

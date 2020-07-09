@@ -62,6 +62,7 @@ html {
           flex-direction: column;
   font-family: "FuturaMedium";
   font-size: 10rem;
+  z-index: 25;
 }
 
 .heroTitle :nth-child(2) {
@@ -187,6 +188,29 @@ html {
   top: -100px;
   left: 250px;
   z-index: 10;
+}
+
+@media only screen and (max-width: 900px) {
+  .heroTitle {
+    font-size: 8rem;
+    z-index: 25;
+  }
+  .descriptionHero {
+    top: 40px;
+    z-index: 25;
+  }
+  .svgHeadline {
+    font-size: 5rem;
+    position: absolute;
+    left: -25%;
+    top: 30%;
+  }
+  .moonImage svg {
+    visibility: hidden;
+  }
+  .scrollDown {
+    z-index: 25;
+  }
 }
 
 .navbar {
@@ -572,9 +596,13 @@ html {
 
 @media screen and (max-width: 1500px) {
   .knowMoreAbout {
-    position: absolute;
-    top: 75%;
-    left: 60%;
+    position: relative;
+    top: 90%;
+    left: 40%;
+  }
+  .googleWrapper {
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .containerKnowMoreTop {
     display: -webkit-box;

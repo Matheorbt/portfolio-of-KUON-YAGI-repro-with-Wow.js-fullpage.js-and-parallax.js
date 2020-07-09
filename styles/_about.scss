@@ -182,9 +182,13 @@
 
 @media screen and (max-width: 1500px) {
   .knowMoreAbout {
-    position: absolute;
-    top: 75%;
-    left: 60%;
+    position: relative;
+    top: 90%;
+    left: 40%;
+  }
+  .googleWrapper {
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .containerKnowMoreTop {
     display: flex;
