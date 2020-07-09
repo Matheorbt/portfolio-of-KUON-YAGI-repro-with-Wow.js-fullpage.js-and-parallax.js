@@ -30,6 +30,8 @@
 ></script>
     <!-- Paralax CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- Fullpage overflow scroll -->
+    <script type="text/javascript" src="/js/scrolloverflow.min.js"></script>
     <!-- CDN CSS fullpage -->
     <link rel="stylesheet" href="./styles/fullpage.css" />
     <!-- GSAP CDN -->
@@ -410,7 +412,7 @@
       </div>
     </div>
       <div class="section about" id="about">
-        <div data-barba="container" data-barba-namespace="about">
+<div data-barba="container" data-barba-namespace="about">
         <div class="leftSectionAbout">
           <div class="aboutTitle">About me<div class="subLine1"></div>
           <div class="subLine2"></div></div>
@@ -764,6 +766,7 @@
         }]
       });
     </script>
+    
     <!-- Script init Fullpage.js -->
     <script>
       new fullpage("#fullpage", {
@@ -779,7 +782,8 @@
         autoScrolling: true,
         navigation: true,
         navigationPosition: "left",
-
+        scrollOverflow:true,
+        scrollOverflowReset: true,
       });
     </script>
     <!-- Parallax script init -->
