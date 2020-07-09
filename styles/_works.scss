@@ -51,7 +51,7 @@
   font-size: 4rem;
   left: 0px;
   top: 40px;
-  color: white;
+  color: #061d38;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -144,4 +144,31 @@
   margin-left: 25%;
   border-radius: 20px;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .worksTitle {
+    position: absolute;
+    top: 12%;
+    left: 22%;
+  }
+  .cloudDay01 {
+    position: relative;
+    top: 150px;
+  }
+  .sun {
+    visibility: hidden;
+  }
+  .projectSlide p {
+    font-size: 3rem;
+  }
+  .projectSlide {
+    font-size: 4rem;
+  }
+  .worksRightSection {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 350px;
+  }
 }
