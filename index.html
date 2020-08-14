@@ -55,6 +55,10 @@
         </ul>
         <ul class="rightNavbar">
           <li class="navlink">
+            <button id="frenchLanguage" onclick="changeLanguage('french')">FR</button>
+            <button id="englishLanguage" onclick="changeLanguage('english')">ENG</button>
+          </li>
+          <li class="navlink">
             <a href="https://github.com/Matheorbt" target="_blank"
               ><i class="fa fa-github" aria-hidden="true"></i
             ></a>
@@ -118,16 +122,7 @@
           </span>
         </div>
         <div class="scrollDown">
-          <span>S</span>
-          <span>c</span>
-          <span>r</span>
-          <span>o</span>
-          <span>l</span>
-          <span>l</span>
-          <span>D</span>
-          <span>o</span>
-          <span>w</span>
-          <span>n</span>
+         <p class="scrollDownVertical">scrolldown</p>
         </div></div>
         <div class="rightSectionHome">
         <div id="scene-a">
@@ -414,7 +409,8 @@
       <div class="section about" id="about">
 <div data-barba="container" data-barba-namespace="about">
         <div class="leftSectionAbout">
-          <div class="aboutTitle">About me<div class="subLine1"></div>
+          <div class="titleAboutSubLine">
+          <div class="aboutTitle">A propos de moi</div><div class="subLine1"></div>
           <div class="subLine2"></div></div>
           <a class="knowMoreAboutButton" >
             <div class="hiddenKnowMoreSection">
@@ -427,7 +423,7 @@
               <img class="photoProfile" src="/img/worksImage.jpg">
               <div class="aboutKnowMoreDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi molestiae exercitationem beatae ipsam temporibus molestias est, quae qui alias iusto reiciendis doloremque et non perspiciatis nobis sit cumque veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi molestiae exercitationem beatae ipsam temporibus molestias est, quae qui alias iusto reiciendis doloremque et non perspiciatis nobis sit cumque veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi molestiae exercitationem beatae ipsam temporibus molestias est, quae qui alias iusto reiciendis doloremque et non perspiciatis nobis sit cumque veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi molestiae exercitationem beatae ipsam temporibus molestias est, quae qui alias iusto reiciendis doloremque et non perspiciatis nobis sit cumque veritatis!</div>
             </div></div>
-          <div class="knowMoreAbout">Know more<div class="arrowAbout"><svg width="25" height="50" viewBox="0 0 50 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="knowMoreAbout">En savoir plus<div class="arrowAbout"><svg width="25" height="50" viewBox="0 0 50 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M49.2288 48.0065L4.57724 0.833028C3.52591 -0.277676 1.83982 -0.277676 0.788495 0.833028C-0.262832 1.94373 -0.262832 3.72505 0.788495 4.83575L43.5358 49.9974L0.788495 95.159C-0.262832 96.2697 -0.262832 98.051 0.788495 99.1617C1.30424 99.7066 1.99851 100 2.67295 100C3.34738 100 4.04166 99.7276 4.5574 99.1617L49.209 51.9883C50.2603 50.8985 50.2603 49.0962 49.2288 48.0065Z" fill="#061D38"/>
 </svg>
 </div></div></a>
@@ -436,12 +432,11 @@
         </div>
         <div class="aboutDescription">
           <div id="scene-b">
-          <div class="layer" data-depth="0.2">
+          <div class="layer" id="aboutDescriptionLanguage" data-depth="0.2">
             <mark class="aboutMark">"</mark>Étudiant à l'école d'ingénieurs
             Epitech en master </br> je suis passionné par la programmation </br>et plus
             particulièrement par le développement web.<mark class="aboutMark"
-              >"</mark
-            >
+              >"</mark >
           </div>
         </div>
           </div>

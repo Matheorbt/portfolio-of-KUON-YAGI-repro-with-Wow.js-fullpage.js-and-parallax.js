@@ -77,9 +77,11 @@
   font-size: 1.5rem;
 }
 
-.scrollDown span {
+.scrollDown p {
   position: relative;
   left: 10px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
 #scene-a {

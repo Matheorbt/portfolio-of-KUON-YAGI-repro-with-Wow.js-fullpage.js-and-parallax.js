@@ -121,9 +121,13 @@ html {
   font-size: 1.5rem;
 }
 
-.scrollDown span {
+.scrollDown p {
   position: relative;
   left: 10px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
 #scene-a {
@@ -304,6 +308,46 @@ html {
   margin-top: 20px;
 }
 
+#frenchLanguage {
+  margin-right: 20px;
+  font-family: "FuturaMedium";
+  font-size: 2.5rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+#frenchLanguage:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#frenchLanguage:focus {
+  outline: none;
+}
+
+#englishLanguage {
+  margin-right: 20px;
+  font-family: "FuturaMedium";
+  font-size: 2.5rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+#englishLanguage:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#englishLanguage:focus {
+  outline: none;
+}
+
 .hamburger {
   cursor: pointer;
 }
@@ -387,7 +431,7 @@ html {
   height: 100vh;
 }
 
-.aboutTitle {
+.titleAboutSubLine {
   position: absolute;
   left: 12%;
   top: 36%;
@@ -410,7 +454,7 @@ html {
   display: block;
   position: relative;
   top: -10px;
-  left: 20px;
+  left: px;
   width: 110px;
   height: 5px;
   background-color: #ff4d5a;
