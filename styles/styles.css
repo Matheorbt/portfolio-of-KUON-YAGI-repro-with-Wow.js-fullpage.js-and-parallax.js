@@ -642,7 +642,18 @@ html {
   border: solid 2px white;
 }
 
-@media screen and (max-width: 1500px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .titleAboutSubLine {
+    top: 45%;
+  }
+  .subLine1 {
+    position: relative;
+    top: 150px;
+  }
+  .subLine2 {
+    position: relative;
+    top: 170px;
+  }
   .knowMoreAbout {
     position: relative;
     top: 90%;
@@ -693,11 +704,13 @@ html {
   .subtitleAbout {
     font-size: 3.5rem;
     position: absolute;
-    top: 62%;
-    left: 5%;
+    top: 55%;
+    white-space: nowrap;
+    left: 45%;
   }
   .knowMoreAbout {
     top: 170px;
+    left: 27%;
   }
 }
 
@@ -888,6 +901,13 @@ html {
     top: 25%;
     left: 5%;
     width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .worksRightSection {
+    position: absolute;
+    left: 30%;
   }
 }
 
