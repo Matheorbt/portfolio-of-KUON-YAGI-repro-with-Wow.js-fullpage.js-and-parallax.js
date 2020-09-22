@@ -58,7 +58,8 @@ const changeLanguage = (language) => {
   let aboutTitle = document.querySelector(".aboutTitle");
   let subtitleAbout = document.querySelector(".subtitleAbout");
   let aboutDescription = document.getElementById("#aboutDescriptionLanguage");
-  let knowMoreAbout = document.getElementById("#knowMoreAbout");
+  let knowMoreAbout = document.querySelector(".knowMoreAbout");
+  let contactTitle = document.querySelector(".contactTitle");
 
   if (language === "french") {
     descriptionHero.innerHTML = "passioné par le web/frontend";
@@ -70,6 +71,8 @@ const changeLanguage = (language) => {
     scrollDown.innerHTML = "descendre";
     aboutTitle.innerHTML = "A propos de moi";
     subtitleAbout.innerHTML = "ce que j'aime / fais";
+    knowMoreAbout.innerHTML = "En savoir plus >";
+    contactTitle.innerHTML = "Contactez moi";
   } else {
     descriptionHero.innerHTML = "passionate about web/frontend";
     homeNavlink.innerHTML = "<a href='" + "#aboutSection" + "'>HOME</a>";
@@ -80,6 +83,8 @@ const changeLanguage = (language) => {
     scrollDown.innerHTML = "scrolldown";
     aboutTitle.innerHTML = "About me";
     subtitleAbout.innerHTML = "what I like /" + "</br>" + "do";
+    knowMoreAbout.innerHTML = "Know more >";
+    contactTitle.innerHTML = "Contact me";
   }
 };
 changeLanguage();
@@ -100,3 +105,5 @@ function initMap() {
     map: map,
   });
 }
+
+//Barba js initialization
