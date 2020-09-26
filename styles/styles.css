@@ -590,12 +590,12 @@ html {
 
 .photoProfile {
   position: relative;
-  width: 100%;
   background-color: red;
-  width: 25vw;
-  height: 40vh;
+  width: 258px;
+  height: 300px;
   margin: 5%;
-  margin-left: 10%;
+  margin-left: 15%;
+  border: white solid 2px;
 }
 
 .aboutKnowMoreDescription {
@@ -655,7 +655,7 @@ html {
     top: 170px;
   }
   .knowMoreAbout {
-    position: absolute;
+    position: relative;
     top: 250%;
     left: 40%;
   }
@@ -674,7 +674,7 @@ html {
     font-size: 1.5rem;
   }
   .photoProfile {
-    width: 50vw;
+    width: 20vw;
     height: 22vh;
     margin-top: 70px;
   }
@@ -682,13 +682,14 @@ html {
     margin: 5px;
     overflow: scroll;
     height: 100%;
+    margin-left: 12%;
   }
   .rightSectionAbout {
     width: 90vw;
     height: 30vh;
     position: absolute;
     top: 15%;
-    left: 5%;
+    left: 8%;
   }
   .aboutTitle {
     position: absolute;
@@ -711,6 +712,15 @@ html {
   .knowMoreAbout {
     top: 170px;
     left: 27%;
+  }
+  .photoProfile {
+    position: relative;
+    background-color: red;
+    width: 40vw;
+    height: 46vw;
+    margin: 5%;
+    margin-left: 15%;
+    border: white solid 2px;
   }
 }
 
@@ -877,6 +887,13 @@ html {
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 1600px) {
+  .worksRightSection {
+    position: absolute;
+    left: 35%;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .worksTitle {
     position: absolute;
@@ -904,35 +921,9 @@ html {
   }
 }
 
-@media only screen and (max-width: 1600px) {
-  .worksRightSection {
-    position: absolute;
-    left: 5%;
-  }
-}
-
 .contact {
   height: 100vh;
   background-color: #061d38;
-}
-
-.contactTitle {
-  position: absolute;
-  left: 8%;
-  top: 25%;
-  color: white;
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-family: "FuturaMedium";
-  font-size: 10rem;
-  z-index: 10;
 }
 
 .contactRedLine01 {
@@ -957,7 +948,7 @@ html {
   border-radius: 50px;
 }
 
-.subtitleContact {
+.contactTitle {
   position: absolute;
   left: 8%;
   top: 25%;
@@ -974,7 +965,25 @@ html {
   font-family: "FuturaMedium";
   font-size: 10rem;
   z-index: 10;
+}
+
+.subtitleContact {
   position: relative;
+  left: 8%;
+  top: 50%;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
   top: 50px;
   font-size: 8rem;
 }

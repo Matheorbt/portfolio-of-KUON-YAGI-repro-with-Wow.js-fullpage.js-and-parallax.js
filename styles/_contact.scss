@@ -3,19 +3,6 @@
   background-color: #061d38;
 }
 
-.contactTitle {
-  position: absolute;
-  left: 8%;
-  top: 25%;
-  color: white;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  font-family: $fontFuturaMedium;
-  font-size: 10rem;
-  z-index: 10;
-}
-
 .contactRedLine01 {
   display: block;
   position: absolute;
@@ -38,7 +25,7 @@
   border-radius: 50px;
 }
 
-.subtitleContact {
+.contactTitle {
   position: absolute;
   left: 8%;
   top: 25%;
@@ -49,7 +36,19 @@
   font-family: $fontFuturaMedium;
   font-size: 10rem;
   z-index: 10;
+}
+
+.subtitleContact {
   position: relative;
+  left: 8%;
+  top: 50%;
+  color: white;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $fontFuturaMedium;
+  font-size: 10rem;
+  z-index: 10;
   top: 50px;
   font-size: 8rem;
 }

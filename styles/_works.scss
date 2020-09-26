@@ -145,7 +145,12 @@
   border-radius: 20px;
   margin-top: 10px;
 }
-
+@media only screen and (max-width: 1600px) {
+  .worksRightSection {
+    position: absolute;
+    left: 35%;
+  }
+}
 @media only screen and (max-width: 900px) {
   .worksTitle {
     position: absolute;
@@ -170,12 +175,5 @@
     top: 25%;
     left: 5%;
     width: 350px;
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .worksRightSection {
-    position: absolute;
-    left: 5%;
   }
 }

@@ -138,12 +138,12 @@
 
 .photoProfile {
   position: relative;
-  width: 100%;
   background-color: red;
-  width: 25vw;
-  height: 40vh;
+  width: 258px;
+  height: 300px;
   margin: 5%;
-  margin-left: 10%;
+  margin-left: 15%;
+  border: white solid 2px;
 }
 
 .aboutKnowMoreDescription {
@@ -200,7 +200,7 @@
   }
 
   .knowMoreAbout {
-    position: absolute;
+    position: relative;
     top: 250%;
     left: 40%;
   }
@@ -214,7 +214,7 @@
     font-size: 1.5rem;
   }
   .photoProfile {
-    width: 50vw;
+    width: 20vw;
     height: 22vh;
     margin-top: 70px;
   }
@@ -222,13 +222,14 @@
     margin: 5px;
     overflow: scroll;
     height: 100%;
+    margin-left: 12%;
   }
   .rightSectionAbout {
     width: 90vw;
     height: 30vh;
     position: absolute;
     top: 15%;
-    left: 5%;
+    left: 8%;
   }
 
   .aboutTitle {
@@ -252,5 +253,14 @@
   .knowMoreAbout {
     top: 170px;
     left: 27%;
+  }
+  .photoProfile {
+    position: relative;
+    background-color: red;
+    width: 40vw;
+    height: 46vw;
+    margin: 5%;
+    margin-left: 15%;
+    border: white solid 2px;
   }
 }
