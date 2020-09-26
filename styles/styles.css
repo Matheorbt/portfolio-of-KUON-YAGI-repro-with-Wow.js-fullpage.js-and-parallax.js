@@ -970,7 +970,7 @@ html {
 .subtitleContact {
   position: relative;
   left: 8%;
-  top: 50%;
+  top: 150px;
   color: white;
   -ms-flex-item-align: center;
       align-self: center;
@@ -984,7 +984,6 @@ html {
   font-family: "FuturaMedium";
   font-size: 10rem;
   z-index: 10;
-  top: 50px;
   font-size: 8rem;
 }
 
