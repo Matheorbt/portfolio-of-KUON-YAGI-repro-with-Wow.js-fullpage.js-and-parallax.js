@@ -28,7 +28,7 @@
 .contactTitle {
   position: absolute;
   left: 8%;
-  top: 25%;
+  top: 22.5%;
   color: white;
   align-self: center;
   display: flex;
@@ -72,7 +72,7 @@
 #scene-d {
   position: absolute;
   left: 45%;
-  top: 18%;
+  top: 5%;
 }
 
 .starsContact {
@@ -131,6 +131,7 @@
   z-index: 10;
 }
 
+//Smartphone media queries
 @media only screen and (max-width: 650px) {
   .mailContact a {
     font-size: 3rem;

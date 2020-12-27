@@ -61,7 +61,7 @@
 #scene-c {
   position: absolute;
   left: 50%;
-  top: 8%;
+  top: -5%;
 }
 
 .sunlight {
@@ -145,12 +145,16 @@
   border-radius: 20px;
   margin-top: 10px;
 }
+
+//Laptop media queries
 @media only screen and (max-width: 1600px) {
   .worksRightSection {
     position: absolute;
     left: 35%;
   }
 }
+
+//smartphone media queries
 @media only screen and (max-width: 900px) {
   .worksTitle {
     position: absolute;

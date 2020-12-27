@@ -184,6 +184,7 @@
   border: solid 2px white;
 }
 
+//Smartphone media queries
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .titleAboutSubLine {
     top: 45%;
@@ -234,7 +235,7 @@
 
   .aboutTitle {
     position: absolute;
-    top: 50%;
+    top: 30%;
     font-size: 6rem;
   }
   .aboutDescription {

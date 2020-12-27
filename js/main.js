@@ -69,7 +69,7 @@ const changeLanguage = (language) => {
     contactNavlink.innerHTML =
       "<a href='" + "#contactSection" + "'>CONTACT</a>";
     scrollDown.innerHTML = "descendre";
-    aboutTitle.innerHTML = "A propos de moi";
+    aboutTitle.innerHTML = "A propos</br>de moi";
     subtitleAbout.innerHTML = "ce que j'aime / fais";
     knowMoreAbout.innerHTML = "En savoir plus >";
     contactTitle.innerHTML = "Contactez moi";
@@ -92,8 +92,6 @@ knowMore();
 navSlide();
 
 //Initialisation de la fonction de l'API Javascript
-
-//API mise en commentaire pour éviter l'excès de requete API avant la version build
 function initMap() {
   var epitech = { lat: 45.74671126902152, lng: 4.834958581829663 };
   var map = new google.maps.Map(document.getElementById("map"), {
@@ -105,5 +103,3 @@ function initMap() {
     map: map,
   });
 }
-
-//Barba js initialization

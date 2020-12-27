@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,11 +23,6 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
-    <!-- Polyfill for barba.js CDN -->
-    <script
-  crossorigin="anonymous"
-  src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"
-></script>
     <!-- Paralax CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <!-- Fullpage overflow scroll -->
@@ -36,8 +31,6 @@
     <link rel="stylesheet" href="./styles/fullpage.css" />
     <!-- GSAP CDN -->
      <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
-    <!-- Barba.js DCN -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
    <link rel="icon" type="image/png" href="img/iconMoon.png" />
    <meta name="description" content="Je m'appelle Mathéo Robert et ce site vous permettra d'en apprendre plus sur moi, sur mes autres projets et vous permettre d'entrer en contact avec moi !">
    <meta name=”robots” content="index, follow">
@@ -47,7 +40,7 @@
    <meta property="og:description" content="Je m'appelle Mathéo Robert et ce site vous permettra d'en apprendre plus sur moi, sur mes autres projets et vous permettre d'entrer en contact avec moi !" key="ogdesc" />
     <title>Mathéo Robert - Ma présentation !</title>
   </head>
-  <body data-barba="wrapper">
+  <body>
     <header>
       <nav class="navbar">
         <ul class="leftNavbar">
@@ -100,9 +93,8 @@
     </header>
     <div id="fullpage">
       <div class="section landingPage" id="home">
-        <div data-barba="container" data-barba-namespace="home">
         <div class="leftSectionHome">
-        <div class="heroTitle">
+          <div class="heroTitle">
           <span class="wow animate__animated animate__fadeInLeft matheo"
             >MATHEO</span
           >
@@ -123,7 +115,8 @@
         </div>
         <div class="scrollDown">
          <p class="scrollDownVertical">scrolldown</p>
-        </div></div>
+        </div>
+        </div>
         <div class="rightSectionHome">
         <div id="scene-a">
           <div class="wow animate__animated animate__fadeInRight">
@@ -404,10 +397,8 @@
         </div>
       </div>
     </div>
-      </div>
     </div>
       <div class="section about" id="about">
-<div data-barba="container" data-barba-namespace="about">
         <div class="leftSectionAbout">
           <div class="titleAboutSubLine">
           <div class="aboutTitle">A propos de moi</div><div class="subLine1"></div>
@@ -451,9 +442,7 @@ Actuellement étudiant en première année au cursus PGE de l'école Epitech sur
           </div>
         </div>
       </div>
-      </div>
       <div class="section works" id="works">
-        <div data-barba="container" data-barba-namespace="works">
         <div class="worksLeftSection">
         <div class="worksTitle">
           Works
@@ -465,7 +454,6 @@ Actuellement étudiant en première année au cursus PGE de l'école Epitech sur
           mes sites
         </div>
         </div>
-        
       </div>
       <div class="worksRightSection"> 
         <div id="scene-c">
@@ -603,10 +591,8 @@ Actuellement étudiant en première année au cursus PGE de l'école Epitech sur
       <div class="slide projectSlide"><a href="#worksSection" target="_blank">PROJECT 04</a><p>Short description</p></div>
     </div>
       </div>
-    </div>
       </div>
       <div class="section contact" id="contact">
-        <div data-barba="container" data-barba-namespace="contact">
         <div class="leftSectionContact">
           <div class="contactTitle">
             Contact me
@@ -740,8 +726,6 @@ Actuellement étudiant en première année au cursus PGE de l'école Epitech sur
           </div>
         </div>
       </div>
-      
-    </div>
     </div>
     </div>
     <!-- Fullpage js CDN -->
@@ -751,25 +735,6 @@ Actuellement étudiant en première année au cursus PGE de l'école Epitech sur
     <script>
       new WOW().init();
     </script>
-    <!-- Script init Barba.js -->
-  <script type="text/javascript">
-      barba.init({
-        transitions: [{
-          name: 'opacity-transition',
-          leave(data) {
-            return gsap.to(data.current.container, {
-              opacity: 0
-            });
-          },
-          enter(data) {
-            return gsap.from(data.next.container, {
-              opacity: 0
-            });
-          }
-        }]
-      });
-    </script>
-    
     <!-- Script init Fullpage.js -->
     <script>
       new fullpage("#fullpage", {
