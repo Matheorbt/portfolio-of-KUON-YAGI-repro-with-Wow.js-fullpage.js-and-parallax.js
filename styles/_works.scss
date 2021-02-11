@@ -16,6 +16,18 @@
   z-index: 10;
 }
 
+.worksTitleContainer {
+  position: absolute;
+  left: 12%;
+  top: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $fontFuturaMedium;
+  font-size: 10rem;
+  z-index: 10;
+}
+
 .worksRedLine1 {
   display: block;
   position: relative;
@@ -159,6 +171,12 @@
   .worksTitle {
     position: absolute;
     top: 12%;
+    left: 22%;
+  }
+
+  .worksTitleContainer {
+    position: absolute;
+    top: 25%;
     left: 22%;
   }
   .cloudDay01 {

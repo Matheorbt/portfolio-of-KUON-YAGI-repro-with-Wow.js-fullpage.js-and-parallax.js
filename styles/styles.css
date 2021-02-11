@@ -759,6 +759,7 @@ html {
     position: absolute;
     top: 30%;
     font-size: 6rem;
+    background-color: black;
   }
   .aboutDescription {
     font-size: 2.5rem;
@@ -799,6 +800,24 @@ html {
   left: 12%;
   top: 36%;
   color: #061d38;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
+}
+
+.worksTitleContainer {
+  position: absolute;
+  left: 12%;
+  top: 50%;
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -962,6 +981,11 @@ html {
   .worksTitle {
     position: absolute;
     top: 12%;
+    left: 22%;
+  }
+  .worksTitleContainer {
+    position: absolute;
+    top: 25%;
     left: 22%;
   }
   .cloudDay01 {
